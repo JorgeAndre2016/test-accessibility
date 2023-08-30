@@ -14,7 +14,7 @@ import { APP_BASE_HREF } from '@angular/common';
     AppRoutingModule
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/test-accebillity/' }
+    
   ],
   bootstrap: [AppComponent]
 })
