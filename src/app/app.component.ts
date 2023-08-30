@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-accessibility';
+  message = "";
+  showAlert = false
+
+
+  ativar(): void {
+    this.message = "Alerta de voz";
+    this.showAlert = true;
+  }
 }
