@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @ViewChild("selecao") public selecao: ElementRef | undefined;
   title = 'test-accessibility';
   message = "";
   showAlert = false
-
 
   ativar(): void {
     this.message = "Alerta de voz";
     this.showAlert = true;
 
+    
     setTimeout(() => {
-      this.showAlert = false;
-      this.message = "";
-    }, 10000);
+      console.log(this.selecao, " SELECAO");
+      this.selecao?.nativeElement.focus()
+      // this.showAlert = false;
+      // this.message = "";
+    }, 5000);
   }
 }
