@@ -5,7 +5,11 @@
     role="alert"
     appTransactionAlert
     *ngIf="showAlert"
-  ></section>
+  >
+  <span style="visibility: hidden;" aria-hidden="true">
+    {{ message }}
+  </span>
+</section>
   <button  (click)="ativar()" type="button">Ativar</button>
   {{ message }} - message
   {{ showAlert }} - showAlert
