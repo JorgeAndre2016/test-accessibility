@@ -19,8 +19,15 @@ export class AppComponent {
     setTimeout(() => {
       console.log(this.selecao, " SELECAO");
       this.selecao?.nativeElement.focus()
-      // this.showAlert = false;
+
+      document.getElementById("#selecao")?.focus();
+      this.showAlert = false;
       // this.message = "";
     }, 5000);
+  }
+
+  logDeFoco(): void {
+    console.log("FOCO ATIVADO");
+    
   }
 }
