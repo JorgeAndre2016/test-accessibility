@@ -17,11 +17,14 @@ export class AppComponent {
 
     
     setTimeout(() => {
-      console.log(this.selecao, " SELECAO");
-      this.selecao?.nativeElement.focus()
+      // console.log(this.selecao, " SELECAO");
+      // this.selecao?.nativeElement.focus()
+      // document.getElementById("#selecao")?.focus();
 
-      document.getElementById("#selecao")?.focus();
-      this.showAlert = false;
+
+      const input: HTMLInputElement = this.selecao?.nativeElement as HTMLInputElement;
+    input.focus();
+      // this.showAlert = false;
       // this.message = "";
     }, 5000);
   }
