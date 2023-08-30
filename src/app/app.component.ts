@@ -12,7 +12,7 @@ export class AppComponent {
   showAlert = false
 
   ativar(): void {
-    this.message = "Alerta de voz";
+    this.message = "Alerta de voz imputado no label";
     this.showAlert = true;
     
     // setTimeout(() => {
