@@ -18,7 +18,7 @@ export class AppComponent {
     setTimeout(() => {
       const input: HTMLInputElement = this.selecao?.nativeElement as HTMLInputElement;
       input.focus();
-    }, 1000);
+    }, 1500);
 
     setTimeout(() => {
       this.showAlert = false;

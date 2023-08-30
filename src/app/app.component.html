@@ -1,17 +1,14 @@
 <div>
-  <span
-    [attr.aria-label]="message"
+  <div
+    aria-label="JORGE ATIVOU A NOTI"
     aria-live="assertive"
     role="alert"
     appTransactionAlert
     tabindex=0
-    *ngIf="showAlert"
     #selecao
-    style="visibility: hidden;"
+    *ngIf="showAlert"
     id="selecao">
-    &nbsp;
-  </span> 
-
+  </div> 
 <!-- <div *ngIf="showAlert" #selecao id="selecao" tabindex="0">Testes de acessibilidade</div> -->
   <button  (click)="ativar()" type="button">Ativar</button>
   {{ message }} - message
