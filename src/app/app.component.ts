@@ -15,10 +15,10 @@ export class AppComponent {
     this.message = "Alerta de voz imputado no label";
     this.showAlert = true;
     
-    // setTimeout(() => {
-    //   const input: HTMLInputElement = this.selecao?.nativeElement as HTMLInputElement;
-    //   input.focus();
-    // }, 1500);
+    setTimeout(() => {
+      const input: HTMLInputElement = this.selecao?.nativeElement as HTMLInputElement;
+      input.focus();
+    }, 1500);
 
     setTimeout(() => {
       this.showAlert = false;
