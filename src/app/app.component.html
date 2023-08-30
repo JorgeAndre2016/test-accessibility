@@ -1,19 +1,16 @@
 <div>
-  <!-- <section
+  <section
     [attr.aria-label]="message"
     aria-live="assertive"
     role="alert"
     appTransactionAlert
+    tabindex=0
     *ngIf="showAlert"
     #selecao
-     
-  >
-  <div  (focus)="logDeFoco()" id="selecao" aria-hidden="true">
-    {{ message }}
-  </div> -->
-<!-- </section> -->
+    id="selecao">
+  </section> 
 
-<div *ngIf="showAlert" #selecao id="selecao" aria-label="TESTES">Testes de acessibilidade</div>
+<!-- <div *ngIf="showAlert" #selecao id="selecao" tabindex="0">Testes de acessibilidade</div> -->
   <button  (click)="ativar()" type="button">Ativar</button>
   {{ message }} - message
   {{ showAlert }} - showAlert

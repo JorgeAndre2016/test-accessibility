@@ -14,21 +14,16 @@ export class AppComponent {
   ativar(): void {
     this.message = "Alerta de voz";
     this.showAlert = true;
-
     
     setTimeout(() => {
-      // console.log(this.selecao, " SELECAO");
-      // this.selecao?.nativeElement.focus()
-      // document.getElementById("#selecao")?.focus();
-
-
       const input: HTMLInputElement = this.selecao?.nativeElement as HTMLInputElement;
-    input.focus();
-      // this.showAlert = false;
-      // this.message = "";
-    }, 5000);
+      input.focus();
+    }, 1000);
 
-    
+    setTimeout(() => {
+      this.showAlert = false;
+      this.message = "";
+    }, 5000);
   }
 
   logDeFoco(): void {
