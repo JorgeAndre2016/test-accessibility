@@ -14,5 +14,10 @@ export class AppComponent {
   ativar(): void {
     this.message = "Alerta de voz";
     this.showAlert = true;
+
+    setTimeout(() => {
+      this.showAlert = false;
+      this.message = "";
+    }, 10000);
   }
 }
