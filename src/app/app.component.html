@@ -3,9 +3,10 @@
     [attr.aria-label]="message"
     aria-live="assertive"
     role="alert"
-    *ngIf="showAlert"
-
+    
+    tabindex=0
     #selecao
+    *ngIf="showAlert"
     id="selecao">
   </div> 
 <!-- <div *ngIf="showAlert" #selecao id="selecao" tabindex="0">Testes de acessibilidade</div> -->
