@@ -1,5 +1,5 @@
 <div>
-  <section
+  <div
     [attr.aria-label]="message"
     aria-live="assertive"
     role="alert"
@@ -8,7 +8,8 @@
     *ngIf="showAlert"
     #selecao
     id="selecao">
-  </section> 
+ 
+  </div> 
 
 <!-- <div *ngIf="showAlert" #selecao id="selecao" tabindex="0">Testes de acessibilidade</div> -->
   <button  (click)="ativar()" type="button">Ativar</button>
